@@ -1,51 +1,72 @@
-/** {
-  outline: 1px solid red !important;
-}*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -box-sizing: border-box;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v44-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v44-latin-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v44-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v44-latin-700italic.woff2') format('woff2');
+}
+
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   background: black;
 }
-
 input {
   background: grey;
   font-size: 18px;
 }
-
 form {
   display: inline-block;
 }
-
 .centered {
   text-align: center;
 }
-
 #pizzaSize {
   font-weight: 800;
 }
-
 .mover {
   position: fixed;
   width: 256px;
   z-index: -1;
 }
-
 .randomPizzaContainer {
   float: left;
   display: flex;
 }
-
 .randomPizzaContainer:after {
   content: "";
   display: table;
   clear:both;
 }
-
  .container {
   background-color: rgba(240, 60, 60, 0.8);
 }
