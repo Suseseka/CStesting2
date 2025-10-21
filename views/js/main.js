@@ -438,7 +438,7 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((scrollTop / 1250) + (i % 5));
-    items[i].style.transform = 'translateX(' + (items[i].basicLeft + 100 * phase + 'px');
+    items[i].style.transform = 'translateX(' + (items[i].basicLeft + 100 * phase) + 'px)';
   }
   window.performance.mark("mark_end_frame");
   window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
@@ -468,7 +468,6 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.height = "100px";
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
-    elem.style.left = elem.basicLeft + "px";
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
