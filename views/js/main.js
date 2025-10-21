@@ -457,10 +457,8 @@ window.addEventListener('scroll', function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
-  var pageWidth = Math.max(window.innerWidth, document.documentElement.scrollWidth);
-  var pageHeight = Math.max(window.innerHeight, document.documentElement.scrollHeight);
-  var cols = Math.ceil(pageWidth / s);
-  var rows = Math.ceil(pageHeight / s);
+  var cols = Math.ceil(window.innerWidth / s);
+  var rows = Math.ceil(window.innerHeight / s);
   var total = cols * rows;
   for (var i = 0; i < total; i++) {
     var elem = document.createElement('img');
