@@ -456,7 +456,7 @@ window.addEventListener('scroll', function() {
         }
 });
 document.addEventListener('DOMContentLoaded', function() {
-  var s = 128;
+  var s = 256;
   var cols = Math.ceil(window.innerWidth / s);
   var rows = Math.ceil(window.innerHeight / s);
   var total = cols * rows;
@@ -467,7 +467,6 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.loading="lazy";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.style.position = "absolute";
     elem.basicLeft = (i % cols) * s;
     elem.style.left = elem.basicLeft + "px";
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
