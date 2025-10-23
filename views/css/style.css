@@ -32,7 +32,7 @@
   src: url('../fonts/open-sans-v44-latin-700italic.woff2') format('woff2');
 }
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: black;
 }
 input {
