@@ -335,6 +335,7 @@ var pizzaElementGenerator = function(i) {
   pizzaImage.src = "images/pizza.webp";
   pizzaImage.classList.add("img-responsive");
   pizzaImage.loading="lazy";
+  pizzaImage.alt="";
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
   pizzaDescriptionContainer.style.width="65%";
@@ -464,7 +465,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.webp";
-    elem.loading="lazy";
+    elem.alt = "alt";
+    elem.loading = "lazy";
     elem.style.height = "100px";
     elem.style.width = "77px";
     elem.style.left = ((i % cols) * s) + 'px';
