@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.src = "images/pizza.webp";
     elem.loading="lazy";
     elem.style.height = "100px";
-    elem.style.width = "73.333px";
+    elem.style.width = "77px";
     elem.style.left = ((i % cols) * s) + 'px';
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
