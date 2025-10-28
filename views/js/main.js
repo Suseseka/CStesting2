@@ -465,7 +465,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < total; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
-    elem.src = "images/pizza.webp";
+    elem.src = "images/pizza-77.webp";
     elem.alt = "";
     elem.loading = "lazy";
     elem.style.height = "100px";
